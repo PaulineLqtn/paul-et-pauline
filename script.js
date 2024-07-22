@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
                 for(var i=0 ; i<navbarLinks.length ; i++) {
                     navbarLinks[i].style.color = 'black';
                 }
-                for(var i=0 ; i<navbarLinks.length ; i++) {
+                for(var i=0 ; i<buttonsWhite.length ; i++) {
                     buttonsWhite[i].style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
                     buttonsWhite[i].style.color = 'white';
                 }
@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
                 for(var i=0 ; i<navbarLinks.length ; i++) {
                     navbarLinks[i].style.color = 'white';
                 }
-                for(var i=0 ; i<navbarLinks.length ; i++) {
+                for(var i=0 ; i<buttonsWhite.length ; i++) {
                     buttonsWhite[i].style.backgroundColor = 'white';
                     buttonsWhite[i].style.color = 'black';
                 }
@@ -59,7 +59,12 @@ window.addEventListener('scroll', function() {
 
 let imageReceptionNumber = 1;
 
-let imagesReception = ["ressources/IMG_9529.JPG", "ressources/IMG_9150.jpg", "ressources/IMG_6777.jpg", "ressources/IMG_8478.jpg"]
+let imagesReception = [
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_9529.JPG",
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_9150.jpg",
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_6777.JPG",
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_8478.JPG"
+];
 
 function changeImage() {
     if (imageReceptionNumber >= imagesReception.length) {
