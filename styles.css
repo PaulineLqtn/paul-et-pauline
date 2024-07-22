@@ -1,0 +1,581 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    font-family: "Cormorant Infant";
+    font-size: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+/* Change the color in the stroke property of the image data */
+.custom-toggler {
+    visibility: hidden;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+/* Style de base pour les liens */
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: white;
+}
+
+/* Style de la ligne sous le lien */
+.nav-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: white; /* Couleur de la ligne */
+    transition: width 0.3s ease; /* Animation de la ligne */
+}
+  
+/* Style au survol du lien */
+.nav-link:hover::after {
+    width: 100%; /* Étendre la ligne sur toute la largeur du lien */
+}
+
+.navbar-date {
+    font-size: 0.75rem;
+    color: white;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    /* padding: 10px; */
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.navbar-menus {
+    width: 100%;
+}
+
+.navbar-menus ul {
+    list-style-type: none;
+}
+
+.navbar-menus li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menus li a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+.navbar-menus li a:active {
+    font-weight: bold;
+}
+
+.cover-photo-title {
+    font-size: 3.5rem;
+}
+
+.section-title1 {
+    font-size: 3rem;
+}
+
+.section-title2 {
+    font-size: 2rem;
+}
+
+.section-title3 {
+    font-size: 2rem;
+}
+
+.big-margin-top {
+    margin-top: 130px;
+}
+
+.map-link {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.map-link:hover {
+    cursor: pointer;
+    /* color: #806E76; */
+    color: grey;
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.footer-row {
+    border-top: 1px solid black;
+}
+
+.menus-list {
+    list-style: none;
+}
+
+.menus-list a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.menus-list a:hover {
+    cursor: pointer;
+    color: grey;
+    border-bottom: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer h4 {
+    font-size : 1.25rem;
+}
+
+.contact-details {
+    font-size: 0.75rem;
+}
+
+.contact-details a {
+    font-size: 0.75rem;
+    color: black;
+}
+
+.contact-details a:hover {
+    cursor: pointer;
+    color: grey;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+}
+
+.btn-accomodations {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 80%;
+}
+
+.btn-accomodations:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    color: white;
+}
+
+.btn-accomodations:active {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+.cover-photo {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.cover-photo-text {
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    color: white;
+    z-index: 10;
+}
+
+.cover-photo-text .location {
+    font-size: 2rem;
+}
+
+.cover-photo-text .date {
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.inner-section img {
+    max-width: 500px;
+}
+
+#wedding-list {
+    position: relative;
+    /* overflow: hidden;
+    width: 100%; */
+}
+
+.wedding-list-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    color: white;
+    width: 40%;
+    z-index: 10;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px !important;
+}
+
+.btn-white:hover {
+    text-decoration: none;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-color: var(--defaultWhiteButtonBackgroundColor, rgba(255, 255, 255, 0.6));
+    font-weight: bold;
+    color: black;
+}
+
+.btn-white:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sunrise-icon {
+    width: 40px;
+}
+
+.container-fluid .photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wedding-list-photo {
+    overflow: hidden;
+    width: 100%;
+    /* max-height: 400px; */
+}
+
+.wedding-list-description {
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 575px) {
+    .cover-photo-text {
+        top: 12%;
+        color: white;
+    }
+    .cover-photo-title {
+        font-size: 1.5rem;
+    }
+    .cover-photo-text .location {
+        font-size: 1rem;
+    }
+    .cover-photo-text .date {
+        font-size: 0.75rem;
+    }
+    .section-title1 {
+        font-size: 1.75rem;
+    }
+    .wedding-list-text {
+        top: 10%;
+        left: 12.5%;
+        width: 75%;
+    }
+    .wedding-list-text-mobile h2 {
+        font-size: 1.25rem;
+    }
+    .wedding-list-text-mobile p {
+        font-size: 0.75rem;
+    }
+    .wedding-list-text-mobile {
+        font-size: 0.75rem;
+    }
+    .btn-white {
+        font-size: 0.5rem !important;
+    }
+    .wedding-list-description {
+        font-size: 0.9rem;
+    }
+    .footer-row h4 {
+        font-size: 0.7rem;
+    }
+    .footer-row p, .footer-row a {
+        font-size: 0.4rem;
+    }
+    footer li {
+        line-height: 0.8rem;
+    }
+    .footer-help-menus, .footer-help-text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .cover-photo-title {
+        font-size: 1.5rem;
+    }
+    .cover-photo-text .location {
+        font-size: 1rem;
+    }
+    .cover-photo-text .date {
+        font-size: 0.5rem;
+    }
+    .wedding-list-text h2 {
+        font-size: 1.25rem;
+    }
+    .wedding-list-text p {
+        font-size: 0.75rem;
+    }
+    .wedding-list-text .btn-white {
+        font-size: 1rem;
+    }
+    .footer-row h4 {
+        font-size: 0.75rem;
+    }
+    .footer-row p, .footer-row a {
+        font-size: 0.5rem;
+    }
+    footer li {
+        line-height: 0.8rem;
+    }
+    .footer-help-menus {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .cover-photo-title {
+        font-size: 1.5rem;
+    }
+    .cover-photo-text .location {
+        font-size: 1rem;
+    }
+    .cover-photo-text .date {
+        font-size: 0.5rem;
+    }
+    .section-title1 {
+        font-size: 2rem;
+    }
+    .section-title2 {
+        font-size: 1.25rem;
+    }
+    .inner-section p, .inner-section a, .inner-section p span {
+        font-size: 0.8rem;
+    }
+    .btn-white, .btn-accomodations {
+        font-size: 0.75rem;
+    }
+    .navbar-menus li a {
+        font-size: 0.75rem;
+    }
+    .wedding-list-text {
+        top: 15%;
+        left: 40%;
+        width: 45%;
+    }
+    .wedding-list-text h2 {
+        font-size: 1.25rem;
+    }
+    .wedding-list-text p {
+        font-size: 0.75rem;
+    }
+    .wedding-list-text .btn-white {
+        font-size: 1rem;
+    }
+    .footer-row h4 {
+        font-size: 0.75rem;
+    }
+    .footer-row p, .footer-row a {
+        font-size: 0.5rem;
+    }
+    footer li {
+        line-height: 0.8rem;
+    }
+    .wedding-list-photo {
+        max-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .cover-photo-title {
+        font-size: 2rem;
+    }
+    .cover-photo-text .location {
+        font-size: 1.5rem;
+    }
+    .cover-photo-text .date {
+        font-size: 1rem;
+    }
+    .section-title1 {
+        font-size: 2.5rem;
+    }
+    .section-title2 {
+        font-size: 1.5rem;
+    }
+    .wedding-list-photo {
+        max-height: 400px;
+    }
+    .wedding-list-text h2 {
+        font-size: 1.5rem;
+    }
+    .wedding-list-text p {
+        font-size: 0.9rem;
+    }
+    .wedding-list-text .btn-white {
+        font-size: 0.9rem;
+    }
+    .footer-row h4 {
+        font-size: 1rem;
+    }
+    .footer-row p, .footer-row a {
+        font-size: 0.7rem;
+    }
+    footer li {
+        line-height: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .navbar-menus a {
+        font-size: 1.5rem;
+    }
+    .wedding-list-photo {
+        max-height: 500px;
+    }
+    .cover-photo-title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1650px) {
+    
+    
+}
+
+@media only screen and (min-width: 1650px) and (max-width: 1900px) {
+    .navbar-menus a {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 1900px) and (max-width: 2100px) {
+    .navbar-menus a {
+        font-size: 2rem;
+    }
+    .cover-photo-title {
+        font-size: 5rem;
+    }
+    .cover-photo-text .location {
+        font-size: 3rem;
+    }
+    .cover-photo-text .date {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 2100px) and (max-width: 2300px) {
+    .navbar-menus a {
+        font-size: 2.5rem;
+    }
+    .cover-photo-title {
+        font-size: 5rem;
+    }
+    .cover-photo-text .location {
+        font-size: 4rem;
+    }
+    .cover-photo-text .date {
+        font-size: 2.5rem;
+    }
+    .section-title1 {
+        font-size: 7rem;
+    }
+    .section-title2 {
+        font-size: 3.5rem;
+    }
+    .inner-section p, .inner-section a, .inner-section p span {
+        font-size: 2rem;
+    }
+    .wedding-list-photo {
+        max-height: 800px;
+    }
+    .wedding-list-text h2 {
+        font-size: 3rem;
+    }
+    .wedding-list-text p {
+        font-size: 1.75rem;
+    }
+    .wedding-list-text .btn-white {
+        font-size: 1.75rem;
+    }
+    .footer-row h4 {
+        font-size: 1.75rem;
+    }
+    .footer-row p, .footer-row a {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+    .navbar-menus a {
+        font-size: 2.5rem;
+    }
+    .cover-photo-title {
+        font-size: 6rem;
+    }
+    .cover-photo-text .location {
+        font-size: 4rem;
+    }
+    .cover-photo-text .date {
+        font-size: 2.5rem;
+    }
+    .section-title1 {
+        font-size: 7rem;
+    }
+    .section-title2 {
+        font-size: 3.5rem;
+    }
+    .inner-section p, .inner-section a, .inner-section p span {
+        font-size: 2rem;
+    }
+    .wedding-list-photo {
+        max-height: 800px;
+    }
+    .wedding-list-text h2 {
+        font-size: 3rem;
+    }
+    .wedding-list-text p {
+        font-size: 1.75rem;
+    }
+    .wedding-list-text .btn-white {
+        font-size: 1.75rem;
+    }
+    .footer-row h4 {
+        font-size: 1.75rem;
+    }
+    .footer-row p, .footer-row a {
+        font-size: 1.25rem;
+    }
+
+}
