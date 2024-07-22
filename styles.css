@@ -25,10 +25,6 @@ body, html {
 
 .nav-link {
     color: white;
-}
-
-/* Style de base pour les liens */
-.nav-link {
     position: relative;
     display: inline-block;
 }
@@ -36,23 +32,8 @@ body, html {
 .nav-link:hover {
     font-weight: bold;
     color: white;
-}
-
-/* Style de la ligne sous le lien */
-.nav-link:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px; /* Épaisseur de la ligne */
-    background-color: white; /* Couleur de la ligne */
-    transition: width 0.3s ease; /* Animation de la ligne */
-}
-  
-/* Style au survol du lien */
-.nav-link:hover::after {
-    width: 100%; /* Étendre la ligne sur toute la largeur du lien */
+    border-bottom: 2px solid;
+    cursor: pointer;
 }
 
 .navbar-date {
@@ -60,45 +41,7 @@ body, html {
     color: white;
 }
 
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    /* padding: 10px; */
-}
-
-.navbar-header {
-    display: flex;
-    align-items: center;
-}
-
 .bold {
-    font-weight: bold;
-}
-
-.navbar-menus {
-    width: 100%;
-}
-
-.navbar-menus ul {
-    list-style-type: none;
-}
-
-.navbar-menus li a {
-    text-decoration: none;
-    color: white;
-}
-
-.navbar-menus li a:hover {
-    cursor: pointer;
-    border-bottom: 1px solid white;
-    text-decoration: none;
-}
-
-.navbar-menus li a:active {
     font-weight: bold;
 }
 
@@ -252,10 +195,9 @@ footer h4 {
 
 .btn-white:hover {
     text-decoration: none;
-    /* background-color: rgba(255, 255, 255, 0.6); */
-    background-color: var(--defaultWhiteButtonBackgroundColor, rgba(255, 255, 255, 0.6));
     font-weight: bold;
     color: black;
+    opacity: 0.6;
 }
 
 .btn-white:active {

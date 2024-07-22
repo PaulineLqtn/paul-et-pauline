@@ -4,8 +4,8 @@ window.addEventListener('scroll', function() {
     var navbarMenusList = navbar.querySelector('.navbar-nav');
     var navbarLinks = navbar.querySelectorAll('.nav-link');
     var navbarToggler = navbar.querySelector('.custom-toggler');
-    // var navbarBrand = navbar.querySelector('.navbar-brand');
-    var buttonWhite = navbar.querySelector('.btn-white');
+    var navbarDate = navbar.querySelector('.navbar-date');
+    var buttonsWhite = navbar.querySelectorAll('.btn-white');
 
     // Récupérer la hauteur de la photo de couverture
     var coverPhotoHeight = coverPhoto.getBoundingClientRect().height;
@@ -17,7 +17,6 @@ window.addEventListener('scroll', function() {
             setTimeout(function() {
                 navbarMenusList.style.visibility = 'hidden';
                 navbarToggler.style.visibility = 'hidden';
-                // navbarBrand.style.visibility = 'hidden';
             }, 40);
 
         }
@@ -27,15 +26,14 @@ window.addEventListener('scroll', function() {
                 navbar.style.backdropFilter = 'blur(10px)';
                 navbarMenusList.style.visibility = 'visible';
                 navbarToggler.style.visibility = 'visible';
-                // navbarBrand.style.visibility = 'visible';
-                buttonWhite.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-                buttonWhite.style.color = 'white';
-                // buttonWhiteHover.style.backgroundColor = 'rgba(0, 0, 0, 0.6);'
-                buttonWhite.style.setProperty("--defaultWhiteButtonBackgroundColor", "rgba(0, 0, 0, 0.6);");
+                navbarDate.style.color = 'black';
                 for(var i=0 ; i<navbarLinks.length ; i++) {
                     navbarLinks[i].style.color = 'black';
                 }
-                // navbarBrand.style.color = 'black';
+                for(var i=0 ; i<navbarLinks.length ; i++) {
+                    buttonsWhite[i].style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+                    buttonsWhite[i].style.color = 'white';
+                }
             }, 40);
         }
         else {
@@ -44,14 +42,14 @@ window.addEventListener('scroll', function() {
                 navbar.style.backdropFilter = 'blur(0px)';
                 navbarMenusList.style.visibility = 'visible';
                 navbarToggler.style.visibility = 'visible';
-                // navbarBrand.style.visibility = 'visible';
-                buttonWhite.style.backgroundColor = 'white';
-                buttonWhite.style.color = 'black';
-                // buttonWhiteHover.style.backgroundColor = 'rgba(0, 0, 0, 0.6);'
+                navbarDate.style.color = 'white';
                 for(var i=0 ; i<navbarLinks.length ; i++) {
                     navbarLinks[i].style.color = 'white';
                 }
-                // navbarBrand.style.color = 'white';
+                for(var i=0 ; i<navbarLinks.length ; i++) {
+                    buttonsWhite[i].style.backgroundColor = 'white';
+                    buttonsWhite[i].style.color = 'black';
+                }
             }, 40);
                 
         }
