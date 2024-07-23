@@ -60,10 +60,10 @@ window.addEventListener('scroll', function() {
 let imageReceptionNumber = 1;
 
 let imagesReception = [
-    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_9529.JPG",
-    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_9150.jpg",
-    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_6777.JPG",
-    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_8478.JPG"
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_9529.webp",
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_9150.webp",
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_6777.webp",
+    "https://mariage-paul-pauline-media.s3.eu-west-3.amazonaws.com/ressources/IMG_8478.webp"
 ];
 
 function changeImage() {
